@@ -7,6 +7,7 @@
     --button-background: #f5f4fa; 
     --background-color: #2f303a;
     --contacts-footer: #d9d9d9; 
+    --button-hover-focus: #188ce8; 
 
 }
 
@@ -70,9 +71,11 @@ body {
 
  .hero-heading {
     color: #ffffff;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align:center;
+    text-transform: uppercase;
  }
 
  .button {
@@ -86,7 +89,7 @@ body {
 
  .button:hover,
  .button:focus {
-    background-color: #188CE8;
+    background-color: var(--button-hover-focus);
     color: var(--primary-background-color);
  }
 
@@ -101,6 +104,7 @@ body {
     font-size:14px;
     font-weight:700;
     line-height:1.1;
+    text-transform: uppercase;
  }
 
  .headings {
@@ -118,10 +122,11 @@ body {
     background-color: var(--primary-background-color);
  }
 
- .team-card>h3 {
+ .card h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
  }
 
  .card>p {
@@ -129,10 +134,13 @@ body {
     font-weight:400;
     font-size:16px;
     line-height:1.9;
+    letter-spacing: 0.03em;
  }
 
  p[lang] {
     line-height:1.2;
+    color: var(--primary-paragraph-color);
+    letter-spacing: 0.03em;
  }
 
  .footer {
@@ -178,4 +186,28 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
+ }
+
+ .address:hover,
+ .address:focus {
+   color: var(--accent-color);
+ }
+
+ .contact:hover,
+ .contact:focus {
+   color:var(--accent-color);
+ }
+
+ .visually-hodden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
  }
